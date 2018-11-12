@@ -1,17 +1,10 @@
 {
 	"name": "notes-app-api",
-	"version": "0.0.1",
-	"description": "A test app",
-	"main": "index.js",
-	"directories": {},
-	"dependencies": {
-		"serverless":"latest",
-		"aws-sdk":"latest",
-		"uuid":"latest"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+ssh://git@github.com:guitrspaz/notes-app-api.git"
+	"version": "1.1.0",
+	"description": "A Node.js starter for the Serverless Framework with async/await and unit test support",
+	"main": "handler.js",
+	"scripts": {
+		"test": "jest"
 	},
 	"keywords": [
 		"ctl",
@@ -20,10 +13,34 @@
 		"serverless",
 		"demo"
 	],
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com:guitrspaz/notes-app-api.git"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.4",
+		"babel-plugin-source-map-support": "^1.0.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-stage-3": "^6.24.1",
+		"jest": "^21.2.1",
+		"serverless-offline": "^3.25.6",
+		"serverless-webpack": "^5.1.0",
+		"webpack": "^4.16.2",
+		"webpack-node-externals": "^1.6.0"
+	},
+	"dependencies": {
+		"serverless": "latest",
+		"aws-sdk": "latest",
+		"uuid": "latest",
+		"babel-runtime": "^6.26.0",
+		"source-map-support": "^0.4.18"
+	},
 	"author": "Chris Schroeder <schroeder@jhu.edu> (https://github.com/guitrspaz)",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/guitrspaz/notes-app-api/issues"
 	},
-	"homepage": "https://github.com/guitrspaz/notes-app-api#readme"
+	"homepage": "https://github.com/guitrspaz/notes-app-api#readme",
 }
